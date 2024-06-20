@@ -227,11 +227,11 @@ export function CodingChallenge({ optionsData }: Props) {
       <h1 className="text-2xl md:text-3xl font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong mb-12 underline">
         Options Profit Calculator
       </h1>
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col lg:flex-row">
         <Form {...optionsForm}>
           <form
             onSubmit={optionsForm.handleSubmit(onSubmit)}
-            className="mx-auto mt-6 mb-5 w-[250px] md:w-5/12 gap-5 justify-center flex flex-wrap bg-[#bf996d] rounded-lg py-5"
+            className="mx-auto mt-6 mb-5 w-[75vw] md:w-[600px] gap-5 justify-center flex flex-wrap bg-[#bf996d] rounded-lg p-5"
           >
             <h1 className="text-2xl md:text-3xl w-full font-medium underline">
               Calculator
@@ -240,7 +240,7 @@ export function CodingChallenge({ optionsData }: Props) {
               control={optionsForm.control}
               name="strike_price"
               render={({ field }) => (
-                <FormItem className="w-full md:w-5/12">
+                <FormItem className="w-full sm:w-5/12">
                   <FormLabel>Strike Price</FormLabel>
                   <FormControl>
                     <Input {...field} type="number" />
@@ -257,7 +257,7 @@ export function CodingChallenge({ optionsData }: Props) {
               control={optionsForm.control}
               name="type"
               render={({ field }) => (
-                <FormItem className="w-full md:w-5/12">
+                <FormItem className="w-full sm:w-5/12">
                   <FormLabel>Option Type</FormLabel>
                   <Select
                     onValueChange={field.onChange}
@@ -284,7 +284,7 @@ export function CodingChallenge({ optionsData }: Props) {
               control={optionsForm.control}
               name="ask"
               render={({ field }) => (
-                <FormItem className="w-full md:w-5/12">
+                <FormItem className="w-full sm:w-5/12">
                   <FormLabel>Ask Price</FormLabel>
                   <FormControl>
                     <Input {...field} type="number" />
@@ -300,7 +300,7 @@ export function CodingChallenge({ optionsData }: Props) {
               control={optionsForm.control}
               name="bid"
               render={({ field }) => (
-                <FormItem className="w-full md:w-5/12">
+                <FormItem className="w-full sm:w-5/12">
                   <FormLabel>Bid Price</FormLabel>
                   <FormControl>
                     <Input {...field} type="number" />
@@ -316,7 +316,7 @@ export function CodingChallenge({ optionsData }: Props) {
               control={optionsForm.control}
               name="long_short"
               render={({ field }) => (
-                <FormItem className="w-full md:w-5/12">
+                <FormItem className="w-full sm:w-5/12">
                   <FormLabel>Position Type</FormLabel>
                   <Select
                     onValueChange={field.onChange}
@@ -343,7 +343,7 @@ export function CodingChallenge({ optionsData }: Props) {
               control={optionsForm.control}
               name="expiration_date"
               render={({ field }) => (
-                <FormItem className="w-full md:w-5/12">
+                <FormItem className="w-full sm:w-5/12">
                   <FormLabel>Expiration Date</FormLabel>
                   <Popover>
                     <PopoverTrigger asChild>
